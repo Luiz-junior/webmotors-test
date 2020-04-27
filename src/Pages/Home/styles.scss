@@ -1,0 +1,115 @@
+.container {
+  margin: 0px !important;
+
+  .col {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+.home-container {
+  margin: 0 auto;
+  background: #eee;
+  min-height: 312px;
+  max-width: 933px;
+  padding-bottom: 10px;
+  position: relative;
+
+  .logo {
+    width: 100%;
+    padding: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      justify-content: initial;
+    }
+
+    > img {
+      height: 40px;
+    }
+  }
+
+  .btn-sell-car {
+    position: absolute;
+    right: 40px;
+    top: 145px;
+    z-index: 1;
+
+    background: transparent;
+    border: 2px solid #ffa726;
+    color: #ffa726;
+    font-weight: bold;
+    border-radius: 3px;
+
+    font-size: 10px;
+    padding: 5px 5px;
+
+    @media (min-width: 425px) {
+      padding: 5px 25px;
+      font-size: 13px;
+    }
+
+    @media (min-width: 768px) {
+      right: 10px;
+      top: 110px;  
+    }
+
+    @media (min-width: 1024px) {
+      top: 110px;
+    }
+  }
+
+  .section-filter-vehicle {
+    background: #fff;
+    max-width: 915px;
+    margin: 0 auto;
+    position: relative;
+
+    .tab {
+      overflow: hidden;
+      background-color: #eee;
+    }
+
+    .tab button {
+      background-color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      width: 50%;
+      transition: 0.3s;
+      font-size: 17px;
+      border-bottom: 1px solid #ddd;
+
+      @media (min-width: 768px) {
+        width: initial;
+        padding: 10px 40px;
+      }
+
+      .buy {
+        font-size: 9px;
+        color: #999;
+      }
+
+      .car {
+        font-size: 16px;
+        color: #999;
+      }
+    }
+
+    .tab button.active {
+      border-bottom: 2px solid #bf360c;
+
+      .car {
+        color: #bf360c;
+      }
+    }
+
+    .tabcontent {
+      /* display: none; */
+      padding: 15px 40px;
+      border-top: none;
+    }
+  }
+}
